@@ -1,0 +1,81 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  height: 100vh;
+  font-family: "Outfit", sans-serif;
+  overflow-x: hidden;
+  color: rgb(24, 22, 22);
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* UTILITY */
+.container {
+  max-width: 600px;
+  width: 90%;
+  margin-inline: auto;
+}
+
+#app {
+  min-height: 100vh;
+  /* background-color: aquamarine; */
+  padding: 2rem;
+}
+
+form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.search-area {
+  margin-block: 2rem;
+}
+
+.search-bar {
+  flex: 1;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 1rem;
+  outline: none;
+}
+
+.submit {
+  height: 100%;
+}
+
+#search-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.6rem;
+}
+
+.iconify {
+  font-size: 2em;
+}
+
+header h1 {
+  text-align: center;
+}
+
+/* .weather-info {
+  border: 1px solid black;
+  height: 50vh;
+} */

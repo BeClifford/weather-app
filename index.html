@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather-app</title>
+  </head>
+  <body>
+    <div id="app" class="container">
+      <header>
+        <h1>Weather App</h1>
+      </header>
+
+      <main>
+        <section class="search-area">
+          <form>
+            <div class="search-bar">
+              <input type="text" name="search" id="search"
+                placeholder="Search for a city...">
+            </div>
+            <div class="submit">
+              <button id="search-btn"><span class="iconify"
+                  data-icon="bitcoin-icons:search-outline"></span>Search</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="weather-info">
+          <!-- Weather Information Goes in Here -->
+        </section>
+
+      </main>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+    <script src="//code.iconify.design/1/1.0.6/iconify.min.js"></script>
+  </body>
+</html>
