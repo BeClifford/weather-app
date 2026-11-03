@@ -45,6 +45,7 @@ function displayWeather(weatherInfo) {
   const condition = weatherInfo.currentConditions.conditions;
   const humidity = weatherInfo.currentConditions.humidity;
   const wind = weatherInfo.currentConditions.windspeed;
+  const feelslike = weatherInfo.currentConditions.feelslike;
 
   console.log(condition); //Log the current condition in that locality
   const conditionImage = document.createElement("div");
@@ -77,6 +78,10 @@ function displayWeather(weatherInfo) {
 
     conditionImage.appendChild(conditionIcon);
     weatherInfoContainer.appendChild(conditionImage);
+  }
+
+  function showMainCondition() {
+    const mainCondition = document.createElement("div");
   }
 
   function showOtherConditions() {
