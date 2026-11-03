@@ -52,6 +52,7 @@ function displayWeather(weatherInfo) {
 
   function showAddress() {
     const locality = document.createElement("h2");
+    locality.classList.add("condition-header");
     locality.textContent = `${formattedAddress}`;
     weatherInfoContainer.appendChild(locality);
   }
