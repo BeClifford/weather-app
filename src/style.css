@@ -15,7 +15,7 @@ body {
   font-family: "Outfit", sans-serif;
   overflow-x: hidden;
   color: rgb(24, 22, 22);
-  background: linear-gradient(90deg, #456fe8, #19b0ec);
+  background-color: #90e0ef;
 }
 
 img {
@@ -45,6 +45,11 @@ h2 {
   margin-inline: auto;
 }
 
+header h1 {
+  color: #00b4d8;
+  font-weight: 900;
+}
+
 #app {
   min-height: 100vh;
   padding: 2rem;
@@ -69,6 +74,14 @@ form {
   width: 100%;
   padding: 1rem;
   outline: none;
+  background-color: transparent;
+  border: 2px solid #00b4d8;
+  border-radius: 8px;
+  color: #00b4d8;
+}
+
+.search-bar input::placeholder {
+  color: #caf0f8;
 }
 
 .submit {
@@ -80,6 +93,15 @@ form {
   align-items: center;
   justify-content: center;
   padding: 0.6rem;
+  background-color: transparent;
+  border: 2px solid #00b4d8;
+  border-radius: 8px;
+  color: #caf0f8;
+}
+
+#search-btn:hover {
+  background-color: #00b4d8;
+  color: #caf0f8;
 }
 
 .iconify {
@@ -97,9 +119,10 @@ header h1,
 
 .weather-info {
   padding: 1rem;
-  background: linear-gradient(45deg, #456fe8, #19b0ec);
+  background-color: #00b4d8;
   border-radius: 8px;
   box-shadow: rgba(91, 91, 92, 0.2) 0px 8px 24px;
+  color: #90e0ef;
 }
 
 .condition-img {
@@ -110,22 +133,24 @@ header h1,
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 2rem 0 4rem 0;
+  margin: 4rem 0 4rem 0;
 }
 
 .main-condition {
   text-align: center;
-  margin-bottom: 2rem;
+  margin-bottom: 4rem;
 }
 
 .main-condition > h1 {
   font-size: 5rem;
-  font-weight: 400;
+  font-weight: 700;
+  letter-spacing: -3px;
 }
 
 .main-condition > h2 {
-  margin: 1.5rem 0 0.5rem 0;
+  margin: 1.5rem 0 0.3rem 0;
   font-weight: 400;
+  letter-spacing: -1px;
 }
 
 .other-conditions-box {
@@ -142,11 +167,12 @@ header h1,
 .sub-condition-img {
   width: 20px;
   height: 20px;
+  opacity: 50%;
 }
 
 .sub-condition-box {
   flex: 1;
-  background-color: rgb(25, 176, 236, 0.5);
+  background-color: rgb(202, 240, 248, 0.3);
   padding: 0.75rem;
   border-radius: 8px;
 }
@@ -158,6 +184,11 @@ header h1,
   margin-bottom: 0.5rem;
 }
 
-.title {
+/* .title {
   color: #ffffff;
-}
+} */
+
+/* .sub-condition-value {
+  color: #0077b6;
+  font-weight: 700;
+} */
