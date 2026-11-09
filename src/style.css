@@ -15,6 +15,7 @@ body {
   font-family: "Outfit", sans-serif;
   overflow-x: hidden;
   color: rgb(24, 22, 22);
+  background: linear-gradient(90deg, #456fe8, #19b0ec);
 }
 
 img {
@@ -22,13 +23,18 @@ img {
   display: block;
 }
 
+:root {
+  --h1: 2.2rem;
+  --h2: 1.875rem;
+}
+
 h1 {
-  font-size: 2.2rem;
+  font-size: var(--h1);
   line-height: 2.2rem;
 }
 
 h2 {
-  font-size: 1.875rem;
+  font-size: var(--h2);
   line-height: 2.2rem;
 }
 
@@ -41,7 +47,6 @@ h2 {
 
 #app {
   min-height: 100vh;
-  /* background-color: aquamarine; */
   padding: 2rem;
 }
 
@@ -81,11 +86,78 @@ form {
   font-size: 2em;
 }
 
-header h1 {
+header h1,
+.condition-header {
   text-align: center;
 }
 
-/* .weather-info {
-  border: 1px solid black;
-  height: 50vh;
-} */
+.weather-info-empty {
+  display: none;
+}
+
+.weather-info {
+  padding: 1rem;
+  background: linear-gradient(45deg, #456fe8, #19b0ec);
+  border-radius: 8px;
+  box-shadow: rgba(91, 91, 92, 0.2) 0px 8px 24px;
+}
+
+.condition-img {
+  width: 150px;
+}
+
+.condition-img-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0 4rem 0;
+}
+
+.main-condition {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.main-condition > h1 {
+  font-size: 5rem;
+  font-weight: 400;
+}
+
+.main-condition > h2 {
+  margin: 1.5rem 0 0.5rem 0;
+  font-weight: 400;
+}
+
+.other-conditions-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.other-conditions-box:first-child {
+  flex: 1;
+}
+
+.sub-condition-img {
+  width: 20px;
+  height: 20px;
+}
+
+.sub-condition-box {
+  flex: 1;
+  background-color: rgb(25, 176, 236, 0.5);
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+.sub-condition-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+
+.title {
+  color: #ffffff;
+}
